@@ -1,10 +1,17 @@
+import Background from "@components/background/Background";
+import Foreground from "@components/foreground/Foreground";
 import Layout from "@components/Layout";
+import Preview from "@components/preview/Preview";
 
 export default function Home() {
   return (
     <>
       <Layout>
-        <h1 className="text-[calc(100px-10px)]">Hello World</h1>
+        <div className="max-w-lg bg-white shadow-sm mx-auto">
+          <Foreground />
+          <Background />
+          <Preview />
+        </div>
       </Layout>
     </>
   );
