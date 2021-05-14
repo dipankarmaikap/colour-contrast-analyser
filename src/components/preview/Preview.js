@@ -3,18 +3,17 @@ import React from "react";
 export default function Preview() {
   return (
     <div className="ample-preview">
-      <details className="bg-gray-100">
+      <details className="bg-gray-200">
         <summary className="text-lg font-semibold px-2 py-1.5">
           Sample preview
         </summary>
         <div className="p-2 flex space-x-2 items-center justify-center pb-5">
-          <div
-            contenteditable="true"
-            className="border border-dotted bg-blue-600  min-w-0 h-12  px-4 text-xl text-center
-            focus:outline-none  focus:ring-4 ring-gray-700 font-medium flex items-center"
-          >
-            example text showing contrast
-          </div>
+          <input
+            type="text"
+            value="Sample text and something new"
+            className="border border-dotted bg-blue-600 block min-w-0 h-12  px-4 text-xl text-center
+            focus:outline-none  focus:ring-4 ring-gray-700 font-medium"
+          />
           <div className="border border-dotted bg-blue-600 h-12 flex items-center px-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
