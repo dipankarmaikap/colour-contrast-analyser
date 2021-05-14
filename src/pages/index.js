@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="max-w-lg bg-white shadow-sm mx-auto">
+        <div className="max-w-lg bg-white mx-auto">
           <Foreground />
           <Background />
           <Preview />
