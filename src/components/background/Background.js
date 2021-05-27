@@ -1,4 +1,7 @@
+import useColor from "@hooks/useColor";
+
 export default function Background() {
+  const { backgroundColor, foregroundColor } = useColor();
   const colorType = [
     {
       name: "HEX",
@@ -34,7 +37,10 @@ export default function Background() {
     },
   ];
   return (
-    <section className="background-colour bg-red-600">
+    <section
+      style={{ backgroundColor, color: foregroundColor }}
+      className="background-colour"
+    >
       <div className="p-2">
         <p className="text-xl text-white font-semibold">Background colour</p>
         <div className="control flex space-x-2 my-6">

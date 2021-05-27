@@ -1,5 +1,7 @@
 import "@styles/globals.css";
 import Head from "next/head";
+import { ColorProvider } from "@contexts/ColorContext";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -35,7 +37,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
       <div id="__cca">
-        <Component {...pageProps} />
+        <ColorProvider>
+          <Component {...pageProps} />
+        </ColorProvider>
       </div>
     </>
   );
